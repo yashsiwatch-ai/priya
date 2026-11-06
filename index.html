@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONO — Swiss Design & Spatial Architecture Studio</title>
+  <meta name="description" content="An international Swiss typographic design practice. Precision spatial structures, industrial hardware, and systematic brand architecture.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Precision Header -->
+  <header class="studio-header">
+    <div class="header-inner">
+      <div class="brand-block">
+        <span class="brand-mono">MONO</span>
+        <span class="brand-sub">STUDIO ZÜRICH / TOKYO</span>
+      </div>
+
+      <nav class="studio-nav" aria-label="Main Navigation">
+        <a href="#archive" class="nav-link active"><span class="nav-idx">01</span> Archive</a>
+        <a href="#prototype-lab" class="nav-link"><span class="nav-idx">02</span> Prototype Lab</a>
+        <a href="#calculator" class="nav-link"><span class="nav-idx">03</span> Fee Estimator</a>
+        <a href="#contact" class="nav-link"><span class="nav-idx">04</span> Inquiries</a>
+      </nav>
+
+      <div class="header-status">
+        <span class="status-indicator"></span>
+        <span class="status-text">Accepting Commissions Q1 2027</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Editorial Hero Section -->
+  <section class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-meta">
+        <span class="grid-coordinate">[ LAT 47.3769° N — LON 8.5417° E ]</span>
+        <span class="edition-tag">MONOGRAPH № 28</span>
+      </div>
+
+      <h1 class="hero-headline">
+        Reductive Form.<br>
+        <span class="headline-serif">Absolute Function.</span>
+      </h1>
+
+      <div class="hero-footer-grid">
+        <p class="hero-lead">
+          We operate at the convergence of Swiss typographic discipline, architectural proportion, and industrial materiality. Thirty years of eliminating the decorative to reveal the essential.
+        </p>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="m-num">142</span>
+            <span class="m-label">Architectural Works</span>
+          </div>
+          <div class="metric-item">
+            <span class="m-num">19</span>
+            <span class="m-label">iF / Red Dot Honours</span>
+          </div>
+          <div class="metric-item">
+            <span class="m-num">0.02<span class="unit">mm</span></span>
+            <span class="m-label">Milled CNC Tolerance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Filterable Project Archive -->
+  <section id="archive" class="archive-section">
+    <div class="section-top-bar">
+      <div class="title-with-index">
+        <span class="sec-index">INDEX // 01</span>
+        <h2 class="section-title">Selected Works Archive</h2>
+      </div>
+
+      <!-- Controls: Filters & View Switcher -->
+      <div class="archive-controls">
+        <div class="filter-tabs" role="tablist">
+          <button class="tab-btn active" data-filter="all">All (6)</button>
+          <button class="tab-btn" data-filter="spatial">Spatial (2)</button>
+          <button class="tab-btn" data-filter="hardware">Hardware (2)</button>
+          <button class="tab-btn" data-filter="digital">Digital (2)</button>
+        </div>
+
+        <div class="layout-toggle" role="group" aria-label="Layout view">
+          <button class="layout-btn active" id="viewGridBtn" title="Grid Layout">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </button>
+          <button class="layout-btn" id="viewListBtn" title="List Layout">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div class="project-grid" id="projectContainer">
+      <!-- Project 1 -->
+      <article class="project-card" data-category="spatial" data-id="1">
+        <div class="card-visual visual-bauhaus">
+          <div class="visual-art-pattern spatial-art-1"></div>
+          <span class="project-badge">Zürich Pavilion</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="cat-tag">Spatial Architecture</span>
+            <span class="year-tag">2026</span>
+          </div>
+          <h3 class="project-title">Atelier Kunsthaus Pavilion</h3>
+          <p class="project-summary">Monolithic basalt stone and thermal glazing cantilevered over Lake Lucerne.</p>
+          <button class="btn-inspect" data-project="1">Inspect Specification &rarr;</button>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card" data-category="hardware" data-id="2">
+        <div class="card-visual visual-hardware">
+          <div class="visual-art-pattern hardware-art-1"></div>
+          <span class="project-badge">Precision Device</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="cat-tag">Hardware & Objects</span>
+            <span class="year-tag">2025</span>
+          </div>
+          <h3 class="project-title">Series-8 Chrono Turntable</h3>
+          <p class="project-summary">Direct-drive vinyl transducer milled from solid billet aluminum 6061-T6.</p>
+          <button class="btn-inspect" data-project="2">Inspect Specification &rarr;</button>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card" data-category="digital" data-id="3">
+        <div class="card-visual visual-digital">
+          <div class="visual-art-pattern digital-art-1"></div>
+          <span class="project-badge">Design System</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="cat-tag">Digital Systems</span>
+            <span class="year-tag">2026</span>
+          </div>
+          <h3 class="project-title">Helvetia Banking Core OS</h3>
+          <p class="project-summary">Multi-tier institutional trading interface built on strict typographic scales.</p>
+          <button class="btn-inspect" data-project="3">Inspect Specification &rarr;</button>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card" data-category="spatial" data-id="4">
+        <div class="card-visual visual-spatial-2">
+          <div class="visual-art-pattern spatial-art-2"></div>
+          <span class="project-badge">Residential</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="cat-tag">Spatial Architecture</span>
+            <span class="year-tag">2025</span>
+          </div>
+          <h3 class="project-title">Engadin Alpine Refuge</h3>
+          <p class="project-summary">Carbon-neutral rammed earth and charred larch dwelling in the Swiss Alps.</p>
+          <button class="btn-inspect" data-project="4">Inspect Specification &rarr;</button>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card" data-category="hardware" data-id="5">
+        <div class="card-visual visual-hardware-2">
+          <div class="visual-art-pattern hardware-art-2"></div>
+          <span class="project-badge">Acoustic Audio</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="cat-tag">Hardware & Objects</span>
+            <span class="year-tag">2026</span>
+          </div>
+          <h3 class="project-title">M-01 Planar Transducer</h3>
+          <p class="project-summary">Open-back reference headphones featuring beryllium vapor-deposited drivers.</p>
+          <button class="btn-inspect" data-project="5">Inspect Specification &rarr;</button>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project-card" data-category="digital" data-id="6">
+        <div class="card-visual visual-digital-2">
+          <div class="visual-art-pattern digital-art-2"></div>
+          <span class="project-badge">Typography</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta">
+            <span class="cat-tag">Digital Systems</span>
+            <span class="year-tag">2025</span>
+          </div>
+          <h3 class="project-title">Basel Variable Type Engine</h3>
+          <p class="project-summary">Parametric web typeface engine with optical sizing from 6pt caption to display.</p>
+          <button class="btn-inspect" data-project="6">Inspect Specification &rarr;</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section 2: Interactive Prototype Lab (Before/After & Specs) -->
+  <section id="prototype-lab" class="lab-section">
+    <div class="title-with-index">
+      <span class="sec-index">INDEX // 02</span>
+      <h2 class="section-title">Prototype Tolerance Inspector</h2>
+    </div>
+    <p class="lab-description">Compare CAD dimensional wireframes against finished anodized manufacturing finishes:</p>
+
+    <div class="comparator-wrapper">
+      <div class="comparator-box" id="comparatorBox">
+        <!-- Background Layer (Rendered Finish) -->
+        <div class="comp-layer comp-render">
+          <div class="render-sample">
+            <div class="anodized-block">
+              <span class="block-title">Milled Billet 6061</span>
+              <span class="block-finish">Bead-blasted 120-mesh • Hard Anodize Black</span>
+            </div>
+          </div>
+          <span class="comp-tag right">Final Production</span>
+        </div>
+
+        <!-- Foreground Layer (CAD Wireframe) -->
+        <div class="comp-layer comp-cad" id="cadLayer" style="width: 50%;">
+          <div class="cad-sample">
+            <div class="cad-grid-lines">
+              <span class="cad-metric">&plusmn; 0.015 mm</span>
+              <span class="cad-title">CNC Toolpath Simulation</span>
+            </div>
+          </div>
+          <span class="comp-tag left">Vector CAD Draft</span>
+        </div>
+
+        <!-- Draggable Handle -->
+        <div class="comp-handle" id="compHandle" style="left: 50%;">
+          <div class="handle-line"></div>
+          <div class="handle-thumb">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/><polyline points="9 18 3 12 9 6"/></svg>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/><polyline points="15 18 21 12 15 6"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Interactive Fee & Timeline Estimator -->
+  <section id="calculator" class="calc-section">
+    <div class="title-with-index">
+      <span class="sec-index">INDEX // 03</span>
+      <h2 class="section-title">Commission Fee & Timeline Estimator</h2>
+    </div>
+
+    <div class="calc-grid">
+      <div class="calc-controls-panel">
+        <!-- Service Scope Selection -->
+        <div class="control-group">
+          <label class="group-label">01. Service Discipline</label>
+          <div class="pill-options" role="group">
+            <button class="pill-btn active" data-rate="24000" data-weeks="8" data-service="Spatial Architecture">Spatial Architecture</button>
+            <button class="pill-btn" data-rate="18000" data-weeks="6" data-service="Hardware Industrial">Hardware Design</button>
+            <button class="pill-btn" data-rate="14000" data-weeks="4" data-service="Digital Brand System">Brand & Digital System</button>
+          </div>
+        </div>
+
+        <!-- Physical Prototyping Add-on -->
+        <div class="control-group">
+          <label class="group-label">02. Prototyping Grade</label>
+          <div class="pill-options">
+            <button class="pill-btn-proto active" data-cost="0">Virtual Simulation (Included)</button>
+            <button class="pill-btn-proto" data-cost="6500">Physical CNC Rapid Model (+$6,500)</button>
+            <button class="pill-btn-proto" data-cost="14000">1:1 Full Material Mockup (+$14,000)</button>
+          </div>
+        </div>
+
+        <!-- Timeline Rush Slider -->
+        <div class="control-group">
+          <div class="slider-header">
+            <label for="speedRange" class="group-label">03. Project Velocity</label>
+            <span class="slider-readout" id="speedReadout">Standard Cadence (1.0x)</span>
+          </div>
+          <input type="range" id="speedRange" min="0.75" max="1.5" step="0.25" value="1.0" class="swiss-slider">
+          <div class="slider-markers">
+            <span>Aggressive (-25% Time)</span>
+            <span>Balanced</span>
+            <span>Comprehensive (+50% Exploration)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Quote Summary Panel -->
+      <div class="calc-summary-panel">
+        <div class="summary-top">
+          <span class="summary-eyebrow">ESTIMATED COMMISSIONS</span>
+          <div class="total-figure" id="totalEstimateDisplay">$24,000</div>
+          <span class="currency-tag">CHF / USD Excluding Statutory VAT</span>
+        </div>
+
+        <div class="summary-breakdown">
+          <div class="breakdown-row">
+            <span>Primary Discipline:</span>
+            <strong id="summaryService">Spatial Architecture</strong>
+          </div>
+          <div class="breakdown-row">
+            <span>Fabrication & Prototypes:</span>
+            <strong id="summaryProto">Virtual Simulation ($0)</strong>
+          </div>
+          <div class="breakdown-row">
+            <span>Estimated Delivery:</span>
+            <strong id="summaryTimeline">8 Weeks</strong>
+          </div>
+        </div>
+
+        <button class="btn-swiss-primary" id="btnBookCommission">Initiate Project Inquiry &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Contact & Inquiries -->
+  <section id="contact" class="contact-section">
+    <div class="title-with-index">
+      <span class="sec-index">INDEX // 04</span>
+      <h2 class="section-title">Commission Direct Inquiries</h2>
+    </div>
+
+    <div class="contact-split">
+      <div class="contact-text-side">
+        <p class="contact-lead">
+          We undertake a strictly limited roster of 6 architectural and industrial projects per fiscal cycle to maintain singular craft fidelity.
+        </p>
+        <div class="office-locations">
+          <div class="loc-item">
+            <strong>Zürich Studio</strong>
+            <span>Limmatstrasse 214, 8005 Zürich, Switzerland</span>
+            <span>zurich@mono-studio.ch</span>
+          </div>
+          <div class="loc-item">
+            <strong>Tokyo Atelier</strong>
+            <span>Minami-Aoyama 5-7, Minato-ku, Tokyo 107-0062</span>
+            <span>tokyo@mono-studio.ch</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="swiss-form" id="inquiryForm" onsubmit="return false;">
+        <div class="form-row">
+          <div class="input-wrap">
+            <label for="clientName">Principal Name / Organization</label>
+            <input type="text" id="clientName" required placeholder="e.g. Elena Rostova, Kvadrat GmbH">
+          </div>
+          <div class="input-wrap">
+            <label for="clientEmail">Direct Email</label>
+            <input type="email" id="clientEmail" required placeholder="principal@domain.com">
+          </div>
+        </div>
+
+        <div class="input-wrap">
+          <label for="clientBrief">Project Synopsis & Site/Material Parameters</label>
+          <textarea id="clientBrief" rows="3" required placeholder="Outline the spatial scope, budget horizon, or design problem..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-swiss-submit" id="btnSubmitForm">Dispatch Inquiry Brief</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Side Inspector Modal Drawer -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"></div>
+  <aside class="detail-drawer" id="detailDrawer" aria-hidden="true" role="dialog" aria-labelledby="drawerTitle">
+    <div class="drawer-header">
+      <div>
+        <span class="drawer-idx" id="drawerIdx">SPECIFICATION // 01</span>
+        <h3 class="drawer-title" id="drawerTitle">Project Title</h3>
+      </div>
+      <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close specification sheet">&times;</button>
+    </div>
+
+    <div class="drawer-content">
+      <div class="drawer-photo" id="drawerHero">
+        <!-- Dynamic Photo / SVG graphic -->
+        <div class="drawer-art-box" id="drawerArtBox"></div>
+      </div>
+
+      <div class="drawer-spec-grid">
+        <div class="spec-cell">
+          <span class="spec-label">Year of Execution</span>
+          <span class="spec-val" id="specYear">2026</span>
+        </div>
+        <div class="spec-cell">
+          <span class="spec-label">Client / Patron</span>
+          <span class="spec-val" id="specClient">Kunsthaus Stiftung</span>
+        </div>
+        <div class="spec-cell">
+          <span class="spec-label">Material Palette</span>
+          <span class="spec-val" id="specMaterials">Basalt Stone, Low-Iron Glazing</span>
+        </div>
+        <div class="spec-cell">
+          <span class="spec-label">Dimensional Scale</span>
+          <span class="spec-val" id="specScale">1,400 sq.m Cantilever</span>
+        </div>
+      </div>
+
+      <div class="drawer-narrative">
+        <h4>Design Philosophy & Methodology</h4>
+        <p id="specNarrative">
+          Engineered to dissolve boundaries between internal spatial acoustics and the Alpine lake landscape. The structural load is distributed across three tension pylons.
+        </p>
+      </div>
+
+      <div class="drawer-actions">
+        <button class="btn-swiss-primary" id="btnDownloadSpec">Download Full CAD & Spec PDF</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Global Footer -->
+  <footer class="studio-footer">
+    <div class="footer-grid">
+      <div class="col-brand">
+        <span class="f-logo">MONO STUDIO</span>
+        <p>© 1996–2026 MONO Design Group. All rights reserved.</p>
+      </div>
+      <div class="col-meta">
+        <span>Typography: Space Grotesk & Inter</span>
+        <span>Grid: Asymmetric 12-Column Swiss Baseline</span>
+      </div>
+      <div class="col-action">
+        <button class="btn-top" id="btnBackToTop">&uarr; Return to Top</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="swiss-toast" id="swissToast">Brief dispatched successfully.</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
